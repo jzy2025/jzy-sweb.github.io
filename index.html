@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JZY2025 | 个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #333;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00a8ff;
+        }
+
+        /* 头部区域 */
+        header {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+        }
+
+        /* 内容区块 */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #00a8ff;
+        }
+
+        /* 技能卡片 */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .skill-card i {
+            font-size: 2.5em;
+            color: #00a8ff;
+            margin-bottom: 20px;
+        }
+
+        /* 联系表单 */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #333;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #00a8ff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0097e6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>你好，我是JZY2025</h1>
+            <p>全栈开发者 & 技术爱好者</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <p>热爱编程和技术创新，具有5年全栈开发经验。擅长使用前沿技术解决复杂问题，持续关注人工智能和Web3.0领域的发展。</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">技术栈</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>前端开发</h3>
+                    <p>React/Vue/TypeScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>后端开发</h3>
+                    <p>Node.js/Python/Go</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>数据库</h3>
+                    <p>MySQL/MongoDB/Redis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="姓名" required>
+                    <input type="email" placeholder="邮箱" required>
+                    <textarea rows="5" placeholder="留言内容"></textarea>
+                    <button type="submit">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JZY2025. All rights reserved.</p>
+            <div style="margin-top: 20px;">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
